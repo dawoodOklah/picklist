@@ -1,0 +1,29 @@
+[
+	{
+	 "absolute_value": 0,
+	 "align_labels_right": 0,
+	 "css": ".custom-head {\n    border-bottom: 1px solid #d1d8dd;\n    \n}",
+	 "custom_format": 0,
+	 "default_print_language": "en-US",
+	 "disabled": 0,
+	 "doc_type": "Sales Order",
+	 "docstatus": 0,
+	 "doctype": "Print Format",
+	 "font": "Default",
+	 "format_data": "[{\"fieldname\": \"print_heading_template\", \"fieldtype\": \"Custom HTML\", \"options\": \"<div class=\\\"row section-break\\\"> \\n    <h2 class=\\\"col-xs-4 column-break\\\">\\n        <div>Sales Order</div>\\n        <small class=\\\"sub-heading\\\">{{ doc.name }}</small>\\n    </h2>\\n    <div class=\\\"col-xs-8 column-break\\\">\\n        {{ doc.doc_barcode }}\\n    </div>\\n</div>\"}, {\"fieldtype\": \"Section Break\", \"label\": \"Items with barcode\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldname\": \"_custom_html\", \"print_hide\": 0, \"label\": \"Custom HTML\", \"fieldtype\": \"HTML\", \"options\": \"<table class=\\\"table table-bordered table-condensed\\\" style=\\\"margin: 0;border: 0;\\\">\\n    <thead>\\n        <tr>\\n            <th class=\\\"text-center\\\">\\n                {{ _(\\\"Item Code\\\") }}</th>\\n            <th class=\\\"text-center\\\">\\n                {{ _(\\\"Barcode\\\") }}</th>\\n            <th class=\\\"text-center\\\">\\n                {{ _(\\\"\\u064eQty\\\") }}</th>\\n\\n        </tr>\\n    </thead>\\n    <tbody>\\n        {% for item in doc.items %}\\n        <tr>\\n            <td>\\n                <div class=\\\"value text-center\\\">\\n                    {{ item.item_code }}\\n                </div>\\n            </td>\\n\\n            <td>\\n                <div class=\\\"value text-center\\\">\\n                    {% if item.item_barcode %}\\n                        {{ item.item_barcode }}\\n                    {% endif %}\\n                </div>\\n            <td>\\n                <div class=\\\"value text-center\\\">\\n                    {{ item.qty }}\\n                </div>\\n            </td>\\n        </tr>\\n        {% endfor %}\\n    </tbody>\\n</table>\"}]",
+	 "html": "",
+	 "line_breaks": 1,
+	 "modified": "2022-12-08 18:50:13.595045",
+	 "module": "Selling",
+	 "name": "Print Format With Barcode",
+	 "parent": null,
+	 "parentfield": null,
+	 "parenttype": null,
+	 "print_format_builder": 0,
+	 "print_format_type": "Jinja",
+	 "raw_commands": null,
+	 "raw_printing": 0,
+	 "show_section_headings": 1,
+	 "standard": "Yes"
+	}
+]

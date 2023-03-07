@@ -1,0 +1,20 @@
+input[data-fieldname="sales_order_barcode"],
+input[data-fieldname="item_barcode"] {
+	display: none !important;
+}
+
+div[data-fieldname="sales_order_barcode"] label,
+div[data-fieldname="item_barcode"] label {
+	display: none !important;
+}
+
+.picked-progress {
+	height: 18px !important;
+	position: relative;
+}
+.picked-progress .progress-percent {
+	display: block;
+	position: absolute;
+	top: 50%;
+    left: 50%;
+}

@@ -1,0 +1,19 @@
+[
+	{
+		"default_value": null,
+		"doc_type": "Sales Order",
+		"docstatus": 0,
+		"doctype": "Property Setter",
+		"doctype_or_field": "DocField",
+		"field_name": "status",
+		"modified": "2022-12-07 17:31:48.375186",
+		"name": "Sales Order-status-options",
+		"parent": null,
+		"parentfield": null,
+		"parenttype": null,
+		"property": "options",
+		"property_type": "Text",
+		"row_name": null,
+		"value": "\nDraft\nOn Hold\nTo Deliver and Bill\nTo Bill\nTo Deliver\nCompleted\nCancelled\nClosed\nProcessed\nPaid but Not Processed"
+	}
+]
